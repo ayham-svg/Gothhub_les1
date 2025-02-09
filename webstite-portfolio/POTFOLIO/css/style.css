@@ -1,19 +1,20 @@
-a{
+a {
      color: inherit;
 
 }
+
 p {
      margin: 20px;
 }
 
 
 
-body{
-    
-    margin: 0px                                                       ;
-    background: url('../img/image.png');
-     background-size:cover; 
-   
+body {
+
+     margin: 0px;
+     background: url('../img/image.png');
+     background-size: cover;
+
 }
 
 header {
@@ -21,29 +22,31 @@ header {
      flex-direction: row;
      justify-content: space-between;
 }
-.container-menu{
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 15px;
-font-size: 17pt;
-margin-top: 15px;
-color: #FFFF;
+
+.container-menu {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 15px;
+     font-size: 17pt;
+     margin-top: 15px;
+     color: #FFFF;
 }
 
-.logo-3{
+.logo-3 {
      width: 350px;
      height: fit-content;
      margin-left: 10%;
      margin-top: -3%;
 }
-.container-naastelkaar{
+
+.container-naastelkaar {
      display: flex;
      flex-direction: row;
      gap: 30%
-     
 }
-.container-homeuitleg{
+
+.container-homeuitleg {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -54,93 +57,98 @@ color: #FFFF;
      transform: scaleX(2.0);
 
 }
-.container-footer{
+
+.container-footer {
      display: flex;
      flex-direction: row;
      justify-content: end;
-     margin-top:55px;
+     margin-top: 55px;
      gap: 5px;
 }
 
 .social-icon {
      width: 40px;
      height: 40px;
-   }
-   
-   /* Responsive Styles (Mobile and Tablet) */
-   
-   /* For Tablets or smaller devices (max-width: 1024px) */
-   @media (max-width: 1024px) {
-     .logo-2{
+}
+
+/* Responsive Styles (Mobile and Tablet) */
+
+/* For Tablets or smaller devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+     .logo-2 {
           display: none;
      }
+
      .container-menu {
-       font-size: 15pt;
-       gap: 10px;
+          font-size: 15pt;
+          gap: 10px;
      }
-   
+
      .container-naastelkaar {
-       flex-direction: column;
-       gap: 20px;
+          flex-direction: column;
+          gap: 20px;
      }
-   
+
      .logo-1 img,
      .logo-2 img {
-       max-width: 80%;
+          max-width: 80%;
      }
-   
+
      .container-homeuitleg {
-       font-size: 16pt;
+          font-size: 16pt;
      }
-   }
-   
-   
-   @media (max-width: 768px) {
+}
+
+
+@media (max-width: 768px) {
      header {
-       flex-direction: column;
-       align-items: flex-start;
-       
+          flex-direction: column;
+          align-items: flex-start;
+
      }
-   
+
      .container-menu {
-       flex-direction: column;
-       align-items: center;
-       gap: 8px;
-       font-size: 16pt;
-       margin-left: 40px;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          font-size: 16pt;
+          margin-left: 40px;
      }
-   
+
      .container-naastelkaar {
-       flex-direction: column;
-       gap: 15px;
-       align-items: center;
+          flex-direction: column;
+          gap: 15px;
+          align-items: center;
      }
-   
+
      .container-homeuitleg {
-       font-size: 14pt;
-       padding: 0 10px;
+          font-size: 14pt;
+          padding: 0 10px;
      }
-   
+
      .logo-1 img,
      .logo-2 img {
-       max-width: 100%;
+          max-width: 100%;
      }
-   
+
      .social-icon {
-       width: 30px;
-       height: 30px;
+          width: 30px;
+          height: 30px;
      }
-   }
-   .mijn-foto{
+}
+
+.mijn-foto {
      width: 400px;
      height: auto;
-   }
-   .container-naastelkaar2{
+}
+
+.container-naastelkaar2 {
      display: flex;
-   flex-direction: row;
-   gap: 300px;
-   }
-   .about-uitleg{
+     flex-direction: row;
+     gap: 300px;
+}
+
+.about-uitleg {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -148,147 +156,384 @@ color: #FFFF;
      transform: scaleX(1.5);
      color: #FFFF;
 
-   }
-.container-eigenschappen{
+}
+
+.container-eigenschappen {
      display: flex;
      flex-direction: row;
      justify-content: center;
      margin-top: 50px;
      gap: 40px;
 }
+
 .box-vaardigheden {
-     width: 275px; /* Breedte van de container */
-     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
-     padding: 20px; /* Padding rondom de inhoud */
+     width: 275px;
+     /* Breedte van de container */
+     height: auto;
+     /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px;
+     /* Padding rondom de inhoud */
      border-radius: 50px;
      background-color: #99227F;
      color: #FFF;
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 10px; /* Ruimte tussen de items */
-     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
-     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
-   }
-   
-   .box-vaardigheden h3 {
-     margin: 0; /* Verwijdert standaard marge van het h3-element */
-     font-size: 1.5em; /* Vergroot de tekst van de kop */
-   }
-   
-   .box-vaardigheden p {
-     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
-     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
-     font-size: 1em; /* Bepaalt de grootte van de tekst */
-   }
-   .box-doelen {
-     width: 275px; /* Breedte van de container */
-     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
-     padding: 20px; /* Padding rondom de inhoud */
+     gap: 10px;
+     /* Ruimte tussen de items */
+     overflow: hidden;
+     /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box;
+     /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+}
+
+.box-vaardigheden h3 {
+     margin: 0;
+     /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em;
+     /* Vergroot de tekst van de kop */
+}
+
+.box-vaardigheden p {
+     margin: 5px 0;
+     /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center;
+     /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em;
+     /* Bepaalt de grootte van de tekst */
+}
+
+.box-doelen {
+     width: 275px;
+     /* Breedte van de container */
+     height: auto;
+     /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px;
+     /* Padding rondom de inhoud */
      border-radius: 50px;
      background-color: #99227F;
      color: #FFF;
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 10px; /* Ruimte tussen de items */
-     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
-     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
-   }
-   
-   .box-doelen h3 {
-     margin: 0; /* Verwijdert standaard marge van het h3-element */
-     font-size: 1.5em; /* Vergroot de tekst van de kop */
-   }
-   
-   .box-doelen p {
-     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
-     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
-     font-size: 1em; /* Bepaalt de grootte van de tekst */
-   }
-   .box-pesoonlijkheid {
-     width: 275px; /* Breedte van de container */
-     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
-     padding: 20px; /* Padding rondom de inhoud */
+     gap: 10px;
+     /* Ruimte tussen de items */
+     overflow: hidden;
+     /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box;
+     /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+}
+
+.box-doelen h3 {
+     margin: 0;
+     /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em;
+     /* Vergroot de tekst van de kop */
+}
+
+.box-doelen p {
+     margin: 5px 0;
+     /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center;
+     /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em;
+     /* Bepaalt de grootte van de tekst */
+}
+
+.box-pesoonlijkheid {
+     width: 275px;
+     /* Breedte van de container */
+     height: auto;
+     /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px;
+     /* Padding rondom de inhoud */
      border-radius: 50px;
      background-color: #99227F;
      color: #FFF;
      display: flex;
      flex-direction: column;
      align-items: center;
-     gap: 10px; /* Ruimte tussen de items */
-     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
-     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
-   }
-   
-   .box-pesoonlijkheid h3 {
-     margin: 0; /* Verwijdert standaard marge van het h3-element */
-     font-size: 1.5em; /* Vergroot de tekst van de kop */
-   }
-   
-   .box-pesoonlijkheid p {
-     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
-     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
-     font-size: 1em; /* Bepaalt de grootte van de tekst */
-   }
-   /* Responsive Design */
+     gap: 10px;
+     /* Ruimte tussen de items */
+     overflow: hidden;
+     /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box;
+     /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+}
+
+.box-pesoonlijkheid h3 {
+     margin: 0;
+     /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em;
+     /* Vergroot de tekst van de kop */
+}
+
+.box-pesoonlijkheid p {
+     margin: 5px 0;
+     /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center;
+     /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em;
+     /* Bepaalt de grootte van de tekst */
+}
+
+/* Responsive Design */
 @media (max-width: 1200px) {
      .container-naastelkaar2 {
-       flex-direction: column;
-       gap: 50px; /* Decrease gap between the image and text */
+          flex-direction: column;
+          gap: 50px;
+          /* Decrease gap between the image and text */
      }
-   
-     .container-eigenschappen {
-       flex-direction: column;
-       gap: 20px;
-     }
-   
-     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
-       width: 90%; /* Use 90% of the width of the container on medium screens */
-     }
-   
-     .mijn-foto {
-       width: 80%; /* Make the photo take 80% of the container width */
-     }
-   }
-   
-   @media (max-width: 768px) {
-     .container-naastelkaar2 {
-       flex-direction: column;
-       gap: 20px;
-     }
-   
-     .container-eigenschappen {
-       flex-direction: column;
-       gap: 20px;
-     }
-   
-     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
-       width: 100%; /* Full width for smaller screens */
-     }
-   
-     .mijn-foto {
-       width: 100%; /* Full width for the photo */
-     }
-   
-     .about-uitleg {
-       font-size: 18pt; /* Reduce font size for smaller screens */
-     }
-   }
-   
-   @media (max-width: 480px) {
-     .about-uitleg {
-       font-size: 16pt; /* Further decrease font size on very small screens */
-     }
-   
-     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
-       width: 100%; /* Full width for the boxes on very small screens */
-       padding: 15px; /* Adjust padding for smaller screens */
-     }
-   
-     .mijn-foto {
-       width: 100%; /* Full width for the photo */
-     }
-   }
 
-   
+     .container-eigenschappen {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     .box-vaardigheden,
+     .box-doelen,
+     .box-pesoonlijkheid {
+          width: 90%;
+          /* Use 90% of the width of the container on medium screens */
+     }
+
+     .mijn-foto {
+          width: 80%;
+          /* Make the photo take 80% of the container width */
+     }
+}
+
+@media (max-width: 768px) {
+     .container-naastelkaar2 {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     .container-eigenschappen {
+          flex-direction: column;
+          gap: 20px;
+     }
+
+     .box-vaardigheden,
+     .box-doelen,
+     .box-pesoonlijkheid {
+          width: 100%;
+          /* Full width for smaller screens */
+     }
+
+     .mijn-foto {
+          width: 100%;
+          /* Full width for the photo */
+     }
+
+     .about-uitleg {
+          font-size: 18pt;
+          /* Reduce font size for smaller screens */
+     }
+}
+
+@media (max-width: 480px) {
+     .about-uitleg {
+          font-size: 16pt;
+          /* Further decrease font size on very small screens */
+     }
+
+     .box-vaardigheden,
+     .box-doelen,
+     .box-pesoonlijkheid {
+          width: 100%;
+          /* Full width for the boxes on very small screens */
+          padding: 15px;
+          /* Adjust padding for smaller screens */
+     }
+
+     .mijn-foto {
+          width: 100%;
+          /* Full width for the photo */
+     }
+}
+
+.title-work {
+     font-size: 45pt;
+     color: #FFF;
+     justify-self: center;
+}
+
+.container-myworktitels {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 500px;
+}
+
+.html-css {
+     border-radius: 50px;
+     width: fit-content;
+     padding: 10px;
+     background-color: #701354;
+     color: #FFF;
+}
+
+.java {
+     border-radius: 50px;
+     width: fit-content;
+     padding: 10px;
+     background-color: #701354;
+     color: #FFF;
+     transform: scaleX(1.5);
+}
+
+.container-fotowerk {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     gap: 200px;
+}
+
+.mijn-werk1 {
+     height: 400px;
+     width: auto;
+}
+
+.mijn-werk2 {
+     height: 400px;
+     width: auto;
+}
+
+/* Responsief ontwerp voor medium schermen (max-width: 1200px) */
+@media (max-width: 1200px) {
+     .container-myworktitels {
+          flex-direction: column;
+          /* Zet de titels onder elkaar */
+          gap: 20px;
+          /* Verklein de ruimte tussen de titels */
+     }
+
+     .container-fotowerk {
+          flex-direction: column;
+          /* Zet de afbeeldingen onder elkaar */
+          gap: 20px;
+          /* Verklein de ruimte tussen de afbeeldingen */
+     }
+
+     .mijn-werk1,
+     .mijn-werk2 {
+          height: 300px;
+          /* Pas de hoogte van de afbeeldingen aan voor middelgrote schermen */
+     }
+}
+
+/* Responsief ontwerp voor kleinere schermen (max-width: 768px) */
+@media (max-width: 768px) {
+     .container-myworktitels {
+          flex-direction: column;
+          /* Zet de titels onder elkaar */
+          gap: 20px;
+          /* Verklein de ruimte tussen de titels */
+     }
+
+     .html-css,
+     .java {
+          padding: 8px;
+          /* Verminder de padding voor kleinere schermen */
+          font-size: 14pt;
+          /* Verklein het lettertype van de titels */
+     }
+
+     .container-fotowerk {
+          flex-direction: column;
+          /* Zet de afbeeldingen onder elkaar */
+          gap: 20px;
+          /* Verklein de ruimte tussen de afbeeldingen */
+     }
+
+     .mijn-werk1,
+     .mijn-werk2 {
+          height: 250px;
+          /* Verklein de hoogte van de afbeeldingen op kleinere schermen */
+     }
+}
+
+/* Responsief ontwerp voor zeer kleine schermen (max-width: 480px) */
+@media (max-width: 480px) {
+     .title-work {
+          font-size: 30pt;
+          /* Verklein de lettergrootte van de titel op zeer kleine schermen */
+     }
+
+     .html-css,
+     .java {
+          padding: 5px;
+          /* Verklein de padding voor zeer kleine schermen */
+          font-size: 12pt;
+          /* Verklein het lettertype voor de titels */
+     }
+
+     .container-myworktitels {
+          gap: 10px;
+          /* Verklein de ruimte tussen de titels */
+     }
+
+     .container-fotowerk {
+          gap: 10px;
+          /* Verklein de ruimte tussen de afbeeldingen */
+     }
+
+     .mijn-werk1,
+     .mijn-werk2 {
+          height: 200px;
+          /* Pas de hoogte van de afbeeldingen verder aan voor zeer kleine schermen */
+     }
+}
+
+.container-contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color: #FFF;
+     font-size: larger;
+}
+
+.email {
+     text-align: center;
+}
+
+/* dit hoeft niet responsive te worden is toch klein genoeg en header is al responsive zat
+
+   /* Standaard stijl voor grotere schermen: menu is zichtbaar */
+.container-menu {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+
+.menu-toggle {
+     display: none;
+     /* Verberg de hamburger-knop op grotere schermen */
+     font-size: 30px;
+     background: transparent;
+     border: none;
+     color: #fff;
+}
+
+/* Mobiele weergave: menu verbergen en knop tonen */
+@media (max-width: 768px) {
+     .container-menu {
+          display: none;
+          /* Verberg menu op mobiele schermen */
+          flex-direction: column;
+          /* Zet menu-items onder elkaar */
+          width: 100%;
+          text-align: center;
+     }
+
+     .container-menu.show {
+          display: flex;
+          /* Toon het menu als de 'show' klasse is toegevoegd */
+     }
+
+     .menu-toggle {
+          display: block;
+          /* Toon de hamburger-knop op mobiele schermen */
+     }
+}
