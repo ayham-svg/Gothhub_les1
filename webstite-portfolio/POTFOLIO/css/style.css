@@ -2,11 +2,14 @@ a{
      color: inherit;
 
 }
+p {
+     margin: 20px;
+}
 
 
 
 body{
-     height: 100vh; 
+    
     margin: 0px                                                       ;
     background: url('../img/image.png');
      background-size:cover; 
@@ -31,4 +34,261 @@ color: #FFFF;
 .logo-3{
      width: 350px;
      height: fit-content;
+     margin-left: 10%;
+     margin-top: -3%;
 }
+.container-naastelkaar{
+     display: flex;
+     flex-direction: row;
+     gap: 30%
+     
+}
+.container-homeuitleg{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: Julius Sans One;
+     font-size: 17pt;
+     color: #FFFF;
+     gap: 0px;
+     transform: scaleX(2.0);
+
+}
+.container-footer{
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     margin-top:55px;
+     gap: 5px;
+}
+
+.social-icon {
+     width: 40px;
+     height: 40px;
+   }
+   
+   /* Responsive Styles (Mobile and Tablet) */
+   
+   /* For Tablets or smaller devices (max-width: 1024px) */
+   @media (max-width: 1024px) {
+     .logo-2{
+          display: none;
+     }
+     .container-menu {
+       font-size: 15pt;
+       gap: 10px;
+     }
+   
+     .container-naastelkaar {
+       flex-direction: column;
+       gap: 20px;
+     }
+   
+     .logo-1 img,
+     .logo-2 img {
+       max-width: 80%;
+     }
+   
+     .container-homeuitleg {
+       font-size: 16pt;
+     }
+   }
+   
+   
+   @media (max-width: 768px) {
+     header {
+       flex-direction: column;
+       align-items: flex-start;
+       
+     }
+   
+     .container-menu {
+       flex-direction: column;
+       align-items: center;
+       gap: 8px;
+       font-size: 16pt;
+       margin-left: 40px;
+     }
+   
+     .container-naastelkaar {
+       flex-direction: column;
+       gap: 15px;
+       align-items: center;
+     }
+   
+     .container-homeuitleg {
+       font-size: 14pt;
+       padding: 0 10px;
+     }
+   
+     .logo-1 img,
+     .logo-2 img {
+       max-width: 100%;
+     }
+   
+     .social-icon {
+       width: 30px;
+       height: 30px;
+     }
+   }
+   .mijn-foto{
+     width: 400px;
+     height: auto;
+   }
+   .container-naastelkaar2{
+     display: flex;
+   flex-direction: row;
+   gap: 300px;
+   }
+   .about-uitleg{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-size: 20pt;
+     transform: scaleX(1.5);
+     color: #FFFF;
+
+   }
+.container-eigenschappen{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin-top: 50px;
+     gap: 40px;
+}
+.box-vaardigheden {
+     width: 275px; /* Breedte van de container */
+     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px; /* Padding rondom de inhoud */
+     border-radius: 50px;
+     background-color: #99227F;
+     color: #FFF;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px; /* Ruimte tussen de items */
+     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+   }
+   
+   .box-vaardigheden h3 {
+     margin: 0; /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em; /* Vergroot de tekst van de kop */
+   }
+   
+   .box-vaardigheden p {
+     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em; /* Bepaalt de grootte van de tekst */
+   }
+   .box-doelen {
+     width: 275px; /* Breedte van de container */
+     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px; /* Padding rondom de inhoud */
+     border-radius: 50px;
+     background-color: #99227F;
+     color: #FFF;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px; /* Ruimte tussen de items */
+     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+   }
+   
+   .box-doelen h3 {
+     margin: 0; /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em; /* Vergroot de tekst van de kop */
+   }
+   
+   .box-doelen p {
+     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em; /* Bepaalt de grootte van de tekst */
+   }
+   .box-pesoonlijkheid {
+     width: 275px; /* Breedte van de container */
+     height: auto; /* Hoogte wordt automatisch aangepast aan de inhoud */
+     padding: 20px; /* Padding rondom de inhoud */
+     border-radius: 50px;
+     background-color: #99227F;
+     color: #FFF;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px; /* Ruimte tussen de items */
+     overflow: hidden; /* Zorgt ervoor dat inhoud niet buiten de container valt */
+     box-sizing: border-box; /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+   }
+   
+   .box-pesoonlijkheid h3 {
+     margin: 0; /* Verwijdert standaard marge van het h3-element */
+     font-size: 1.5em; /* Vergroot de tekst van de kop */
+   }
+   
+   .box-pesoonlijkheid p {
+     margin: 5px 0; /* Voegt een kleine marge toe boven en onder de paragrafen */
+     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+     font-size: 1em; /* Bepaalt de grootte van de tekst */
+   }
+   /* Responsive Design */
+@media (max-width: 1200px) {
+     .container-naastelkaar2 {
+       flex-direction: column;
+       gap: 50px; /* Decrease gap between the image and text */
+     }
+   
+     .container-eigenschappen {
+       flex-direction: column;
+       gap: 20px;
+     }
+   
+     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
+       width: 90%; /* Use 90% of the width of the container on medium screens */
+     }
+   
+     .mijn-foto {
+       width: 80%; /* Make the photo take 80% of the container width */
+     }
+   }
+   
+   @media (max-width: 768px) {
+     .container-naastelkaar2 {
+       flex-direction: column;
+       gap: 20px;
+     }
+   
+     .container-eigenschappen {
+       flex-direction: column;
+       gap: 20px;
+     }
+   
+     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
+       width: 100%; /* Full width for smaller screens */
+     }
+   
+     .mijn-foto {
+       width: 100%; /* Full width for the photo */
+     }
+   
+     .about-uitleg {
+       font-size: 18pt; /* Reduce font size for smaller screens */
+     }
+   }
+   
+   @media (max-width: 480px) {
+     .about-uitleg {
+       font-size: 16pt; /* Further decrease font size on very small screens */
+     }
+   
+     .box-vaardigheden, .box-doelen, .box-pesoonlijkheid {
+       width: 100%; /* Full width for the boxes on very small screens */
+       padding: 15px; /* Adjust padding for smaller screens */
+     }
+   
+     .mijn-foto {
+       width: 100%; /* Full width for the photo */
+     }
+   }
+
+   
