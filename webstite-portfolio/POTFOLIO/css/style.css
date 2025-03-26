@@ -1,3 +1,9 @@
+ul, li {
+     margin: 0;
+     padding: 0;
+     list-style: none; /* Verwijdert de standaard lijstdingen */
+ }
+
 a {
      color: inherit;
 
@@ -516,24 +522,11 @@ header {
      color: #fff;
 }
 
-/* Mobiele weergave: menu verbergen en knop tonen */
-@media (max-width: 768px) {
-     .container-menu {
-          display: none;
-          /* Verberg menu op mobiele schermen */
-          flex-direction: column;
-          /* Zet menu-items onder elkaar */
-          width: 100%;
-          text-align: center;
-     }
 
-     .container-menu.show {
-          display: flex;
-          /* Toon het menu als de 'show' klasse is toegevoegd */
-     }
-
-     .menu-toggle {
-          display: block;
-          /* Toon de hamburger-knop op mobiele schermen */
-     }
+.container-footercontact{
+     display: flex;
+     flex-direction: row;
+     justify-content: end;
+     margin-top: 200px;
+     gap: 5px;
 }
