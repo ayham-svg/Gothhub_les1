@@ -55,11 +55,12 @@ header {
 .container-homeuitleg {
      display: flex;
      flex-direction: column;
-     align-items: center;
+     justify-content: center;
+     text-align: center;
+     gap: 10px;
      font-family: Julius Sans One;
-     font-size: 17pt;
+     font-size: 19pt;
      color: #FFFF;
-     gap: 0px;
      transform: scaleX(2.0);
 
 }
@@ -157,10 +158,13 @@ header {
 .about-uitleg {
      display: flex;
      flex-direction: column;
+     justify-content: center;
      align-items: center;
-     font-size: 20pt;
+     text-align: center;
+     font-size: 22pt;
      transform: scaleX(1.5);
      color: #FFFF;
+     gap: 20px;
 
 }
 
@@ -225,7 +229,7 @@ header {
      gap: 10px;
      /* Ruimte tussen de items */
      overflow: hidden;
-     /* Zorgt ervoor dat inhoud niet buiten de container valt */
+    
      box-sizing: border-box;
      /* Zorgt ervoor dat padding binnen de container wordt gerekend */
 }
@@ -250,7 +254,7 @@ header {
      width: 275px;
      /* Breedte van de container */
      height: auto;
-     /* Hoogte wordt automatisch aangepast aan de inhoud */
+     
      padding: 20px;
      /* Padding rondom de inhoud */
      border-radius: 50px;
@@ -264,7 +268,7 @@ header {
      overflow: hidden;
      /* Zorgt ervoor dat inhoud niet buiten de container valt */
      box-sizing: border-box;
-     /* Zorgt ervoor dat padding binnen de container wordt gerekend */
+    
 }
 
 .box-pesoonlijkheid h3 {
@@ -425,11 +429,11 @@ header {
      .mijn-werk1,
      .mijn-werk2 {
           height: 300px;
-          /* Pas de hoogte van de afbeeldingen aan voor middelgrote schermen */
+         
      }
 }
 
-/* Responsief ontwerp voor kleinere schermen (max-width: 768px) */
+
 @media (max-width: 768px) {
      .container-myworktitels {
           flex-direction: column;
@@ -456,7 +460,7 @@ header {
      .mijn-werk1,
      .mijn-werk2 {
           height: 250px;
-          /* Verklein de hoogte van de afbeeldingen op kleinere schermen */
+         
      }
 }
 
@@ -504,9 +508,7 @@ header {
      text-align: center;
 }
 
-/* dit hoeft niet responsive te worden is toch klein genoeg en header is al responsive zat
 
-   /* Standaard stijl voor grotere schermen: menu is zichtbaar */
 .container-menu {
      display: flex;
      justify-content: center;
