@@ -1,8 +1,10 @@
-ul, li {
+ul,
+li {
      margin: 0;
      padding: 0;
-     list-style: none; /* Verwijdert de standaard lijstdingen */
- }
+     list-style: none;
+     /* Verwijdert de standaard lijstdingen */
+}
 
 a {
      color: inherit;
@@ -229,7 +231,7 @@ header {
      gap: 10px;
      /* Ruimte tussen de items */
      overflow: hidden;
-    
+
      box-sizing: border-box;
      /* Zorgt ervoor dat padding binnen de container wordt gerekend */
 }
@@ -254,7 +256,7 @@ header {
      width: 275px;
      /* Breedte van de container */
      height: auto;
-     
+
      padding: 20px;
      /* Padding rondom de inhoud */
      border-radius: 50px;
@@ -268,7 +270,7 @@ header {
      overflow: hidden;
      /* Zorgt ervoor dat inhoud niet buiten de container valt */
      box-sizing: border-box;
-    
+
 }
 
 .box-pesoonlijkheid h3 {
@@ -429,7 +431,7 @@ header {
      .mijn-werk1,
      .mijn-werk2 {
           height: 300px;
-         
+
      }
 }
 
@@ -460,7 +462,7 @@ header {
      .mijn-werk1,
      .mijn-werk2 {
           height: 250px;
-         
+
      }
 }
 
@@ -525,7 +527,7 @@ header {
 }
 
 
-.container-footercontact{
+.container-footercontact {
      display: flex;
      flex-direction: row;
      justify-content: end;
